@@ -1,0 +1,34 @@
+.exit-button{
+-fx-background-color: -fx-primary-red;
+-fx-background-radius: 0;
+-fx-text-fill: white;
+}
+
+.exit-button:hover{
+-fx-background-color: -fx-secondary-red;
+}
+.a2ya{
+-fx-font-size: 48px;
+-fx-text-fill: -fx-primary-blue;
+}
+
+.background{
+-fx-background-color: -fx-primary-background;
+-fx-border-color: -fx-primary-blue;
+}
+
+
+.text{
+-fx-text-fill: -fx-primary-blue;
+}
+
+.login-button{
+-fx-text-fill: -fx-primary-blue;
+-fx-background-color: -fx-primary-background;
+-fx-border-color: -fx-primary-blue;
+-fx-background-radius: 0;
+}
+
+.login-button:hover{
+-fx-background-color: -fx-secondary-background;
+}
