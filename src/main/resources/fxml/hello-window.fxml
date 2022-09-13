@@ -10,11 +10,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.com.a2ya.area3.HelloController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.com.a2ya.area3.controller.HelloController">
    <children>
       <AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0">
          <children>
-            <Button layoutX="600.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="exit-button" text="X" textAlignment="CENTER" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <Button fx:id="exitButton" layoutX="600.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="exit-button" text="X" textAlignment="CENTER" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -32,7 +32,7 @@
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label styleClass="text" text="LOGIN" />
-                        <TextField alignment="CENTER">
+                        <TextField fx:id="loginTXT" alignment="CENTER">
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
@@ -48,7 +48,7 @@
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
                         <Label styleClass="text" text="HASŁO" />
-                        <TextField>
+                        <TextField fx:id="passwordTXT">
                            <HBox.margin>
                               <Insets left="20.0" />
                            </HBox.margin>
@@ -58,7 +58,7 @@
                         </TextField>
                      </children>
                   </HBox>
-                  <Button mnemonicParsing="false" styleClass="login-button" text="ZALOGUJ SIĘ">
+                  <Button fx:id="loginButton" mnemonicParsing="false" styleClass="login-button" text="ZALOGUJ SIĘ">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -76,15 +76,15 @@
                   <Font name="System Bold" size="35.0" />
                </font>
                <stylesheets>
-                  <URL value="@../../../../css/global-colors.css" />
-                  <URL value="@../../../../css/hello.css" />
+                  <URL value="@../css/global-colors.css" />
+                  <URL value="@../css/hello.css" />
                </stylesheets>
             </Label>
          </children>
       </AnchorPane>
    </children>
    <stylesheets>
-      <URL value="@../../../../css/hello.css" />
-      <URL value="@../../../../css/global-colors.css" />
+      <URL value="@../css/hello.css" />
+      <URL value="@../css/global-colors.css" />
    </stylesheets>
 </AnchorPane>
